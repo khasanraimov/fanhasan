@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,19 @@
 		044118ED2A364AFE003E4ABE /* fanhasan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044118EB2A364AFE003E4ABE /* fanhasan.xcdatamodeld */; };
 		044118EF2A364B00003E4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044118EE2A364B00003E4ABE /* Assets.xcassets */; };
 		044118F22A364B00003E4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044118F02A364B00003E4ABE /* LaunchScreen.storyboard */; };
+		04DECBCA2A365D7E00938335 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBC92A365D7E00938335 /* RegistrationViewController.swift */; };
+		04DECBCC2A36659F00938335 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBCB2A36659F00938335 /* LoginViewController.swift */; };
+		04DECBCE2A36722B00938335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DECBCD2A36722B00938335 /* GoogleService-Info.plist */; };
+		04DECBD02A36806F00938335 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBCF2A36806F00938335 /* UserViewController.swift */; };
+		04DECBD22A3697A200938335 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBD12A3697A200938335 /* SettingsViewController.swift */; };
+		04DECBD42A376FF000938335 /* ListMyFanficsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBD32A376FF000938335 /* ListMyFanficsViewController.swift */; };
+		04DECBD62A37777E00938335 /* CreatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBD52A37777E00938335 /* CreatingViewController.swift */; };
+		04DECBD82A377A3F00938335 /* WriteFanficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DECBD72A377A3F00938335 /* WriteFanficViewController.swift */; };
+		1C6CF573FF8414C5ECF0C989 /* Pods_fanhasan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538C4DA6B8A87717A5D27449 /* Pods_fanhasan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B8ACFA1DA3513860B34C43 /* Pods-fanhasan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanhasan.release.xcconfig"; path = "Target Support Files/Pods-fanhasan/Pods-fanhasan.release.xcconfig"; sourceTree = "<group>"; };
 		044118E12A364AFE003E4ABE /* fanhasan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fanhasan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044118E42A364AFE003E4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044118E62A364AFE003E4ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,16 @@
 		044118EE2A364B00003E4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044118F12A364B00003E4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044118F32A364B00003E4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DECBC92A365D7E00938335 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		04DECBCB2A36659F00938335 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04DECBCD2A36722B00938335 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04DECBCF2A36806F00938335 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		04DECBD12A3697A200938335 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		04DECBD32A376FF000938335 /* ListMyFanficsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMyFanficsViewController.swift; sourceTree = "<group>"; };
+		04DECBD52A37777E00938335 /* CreatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingViewController.swift; sourceTree = "<group>"; };
+		04DECBD72A377A3F00938335 /* WriteFanficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFanficViewController.swift; sourceTree = "<group>"; };
+		538C4DA6B8A87717A5D27449 /* Pods_fanhasan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanhasan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E92A2FC31ACEB4903A44D5 /* Pods-fanhasan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanhasan.debug.xcconfig"; path = "Target Support Files/Pods-fanhasan/Pods-fanhasan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6CF573FF8414C5ECF0C989 /* Pods_fanhasan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				044118E32A364AFE003E4ABE /* fanhasan */,
 				044118E22A364AFE003E4ABE /* Products */,
+				2A1D6D0999CAA4DF4550A17A /* Pods */,
+				263E7C2475671FE154971EE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +86,33 @@
 				044118F02A364B00003E4ABE /* LaunchScreen.storyboard */,
 				044118F32A364B00003E4ABE /* Info.plist */,
 				044118EB2A364AFE003E4ABE /* fanhasan.xcdatamodeld */,
+				04DECBC92A365D7E00938335 /* RegistrationViewController.swift */,
+				04DECBCB2A36659F00938335 /* LoginViewController.swift */,
+				04DECBCD2A36722B00938335 /* GoogleService-Info.plist */,
+				04DECBCF2A36806F00938335 /* UserViewController.swift */,
+				04DECBD12A3697A200938335 /* SettingsViewController.swift */,
+				04DECBD32A376FF000938335 /* ListMyFanficsViewController.swift */,
+				04DECBD52A37777E00938335 /* CreatingViewController.swift */,
+				04DECBD72A377A3F00938335 /* WriteFanficViewController.swift */,
 			);
 			path = fanhasan;
+			sourceTree = "<group>";
+		};
+		263E7C2475671FE154971EE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538C4DA6B8A87717A5D27449 /* Pods_fanhasan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A1D6D0999CAA4DF4550A17A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9E92A2FC31ACEB4903A44D5 /* Pods-fanhasan.debug.xcconfig */,
+				01B8ACFA1DA3513860B34C43 /* Pods-fanhasan.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044118F62A364B00003E4ABE /* Build configuration list for PBXNativeTarget "fanhasan" */;
 			buildPhases = (
+				661CA5BBF77AF36F56568D02 /* [CP] Check Pods Manifest.lock */,
 				044118DD2A364AFE003E4ABE /* Sources */,
 				044118DE2A364AFE003E4ABE /* Frameworks */,
 				044118DF2A364AFE003E4ABE /* Resources */,
+				DECADD57379320D3E3EB1B61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +153,7 @@
 				};
 			};
 			buildConfigurationList = 044118DC2A364AFE003E4ABE /* Build configuration list for PBXProject "fanhasan" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -126,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044118F22A364B00003E4ABE /* LaunchScreen.storyboard in Resources */,
+				04DECBCE2A36722B00938335 /* GoogleService-Info.plist in Resources */,
 				044118EF2A364B00003E4ABE /* Assets.xcassets in Resources */,
 				044118EA2A364AFE003E4ABE /* Main.storyboard in Resources */,
 			);
@@ -133,13 +184,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		661CA5BBF77AF36F56568D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fanhasan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECADD57379320D3E3EB1B61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fanhasan/Pods-fanhasan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fanhasan/Pods-fanhasan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fanhasan/Pods-fanhasan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044118DD2A364AFE003E4ABE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				044118E72A364AFE003E4ABE /* ViewController.swift in Sources */,
+				04DECBD82A377A3F00938335 /* WriteFanficViewController.swift in Sources */,
+				04DECBD02A36806F00938335 /* UserViewController.swift in Sources */,
+				04DECBD62A37777E00938335 /* CreatingViewController.swift in Sources */,
+				04DECBD22A3697A200938335 /* SettingsViewController.swift in Sources */,
 				044118ED2A364AFE003E4ABE /* fanhasan.xcdatamodeld in Sources */,
+				04DECBCA2A365D7E00938335 /* RegistrationViewController.swift in Sources */,
+				04DECBD42A376FF000938335 /* ListMyFanficsViewController.swift in Sources */,
+				04DECBCC2A36659F00938335 /* LoginViewController.swift in Sources */,
 				044118E52A364AFE003E4ABE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +384,13 @@
 		};
 		044118F72A364B00003E4ABE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E92A2FC31ACEB4903A44D5 /* Pods-fanhasan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XRTDH64H3;
 				INFOPLIST_FILE = fanhasan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +404,13 @@
 		};
 		044118F82A364B00003E4ABE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B8ACFA1DA3513860B34C43 /* Pods-fanhasan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XRTDH64H3;
 				INFOPLIST_FILE = fanhasan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
