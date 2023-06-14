@@ -287,7 +287,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="create1" id="G0V-Lp-stQ"/>
                     <connections>
-                        <outlet property="listMyFanfic" destination="hun-nb-oIb" id="f5l-4h-sIG"/>
+                        <outlet property="listMyFanficsTableView" destination="hun-nb-oIb" id="Suu-0F-GYF"/>
                         <segue destination="xlH-GM-yHk" kind="show" identifier="ToCreate" id="Cuz-s8-xdS"/>
                     </connections>
                 </viewController>
@@ -303,12 +303,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ikt-ER-Wh1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ikt-ER-Wh1">
                                 <rect key="frame" x="17" y="79" width="108" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="kdE-Hd-jEy"/>
                                     <constraint firstAttribute="width" constant="108" id="z3p-wE-LHD"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить обложку" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaY-tY-dyf">
                                 <rect key="frame" x="133" y="133" width="226" height="21"/>
@@ -320,7 +326,7 @@
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
                                 <state key="normal" title="Сохранить и продолжить"/>
                                 <connections>
-                                    <action selector="toWriteFanfic:" destination="xlH-GM-yHk" eventType="touchUpInside" id="2VT-YW-NtW"/>
+                                    <action selector="toWriteFanficButtonTapped:" destination="xlH-GM-yHk" eventType="touchUpInside" id="Y4t-0X-aoI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-Ut-FQ2">
@@ -342,6 +348,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vJ-Hb-zGb">
+                                <rect key="frame" x="133" y="177" width="226" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Категория"/>
+                                <connections>
+                                    <action selector="categoryButtonTapped:" destination="xlH-GM-yHk" eventType="touchUpInside" id="B1f-t3-D7Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -349,6 +363,7 @@
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="BgG-m7-Jo4" secondAttribute="trailing" constant="16" id="5ht-rA-d3f"/>
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="sF8-X2-JJk" secondAttribute="trailing" constant="16" id="A2m-7r-3py"/>
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="eaY-tY-dyf" secondAttribute="trailing" constant="16" id="At0-Jb-Ba6"/>
+                            <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="8vJ-Hb-zGb" secondAttribute="trailing" constant="16" id="CAK-aI-mkN"/>
                             <constraint firstItem="BgG-m7-Jo4" firstAttribute="leading" secondItem="6sY-Bk-S3h" secondAttribute="leading" constant="16" id="Ghr-BZ-Mq7"/>
                             <constraint firstItem="aXU-Ut-FQ2" firstAttribute="top" secondItem="6sY-Bk-S3h" secondAttribute="top" id="Igg-F0-ivK"/>
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="ynf-bc-v13" secondAttribute="trailing" constant="16" id="K6i-OW-ngC"/>
@@ -360,12 +375,14 @@
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="eaY-tY-dyf" secondAttribute="trailing" constant="16" id="Xix-7B-T33"/>
                             <constraint firstItem="Ikt-ER-Wh1" firstAttribute="top" secondItem="aXU-Ut-FQ2" secondAttribute="bottom" constant="29" id="YFa-hE-nPK"/>
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="eaY-tY-dyf" secondAttribute="trailing" constant="16" id="bkG-Th-r8T"/>
+                            <constraint firstItem="8vJ-Hb-zGb" firstAttribute="leading" secondItem="Ikt-ER-Wh1" secondAttribute="trailing" constant="8" id="br6-e8-ylX"/>
                             <constraint firstItem="BgG-m7-Jo4" firstAttribute="top" secondItem="ynf-bc-v13" secondAttribute="bottom" constant="40" id="hvS-Hx-nSz"/>
                             <constraint firstItem="Ikt-ER-Wh1" firstAttribute="leading" secondItem="6sY-Bk-S3h" secondAttribute="leading" constant="17" id="iEl-qx-ojN"/>
                             <constraint firstItem="aXU-Ut-FQ2" firstAttribute="leading" secondItem="6sY-Bk-S3h" secondAttribute="leading" constant="17" id="jBd-5m-zd8"/>
                             <constraint firstItem="eaY-tY-dyf" firstAttribute="leading" secondItem="Ikt-ER-Wh1" secondAttribute="trailing" constant="8" id="lb7-cx-Tmt"/>
                             <constraint firstItem="ynf-bc-v13" firstAttribute="leading" secondItem="6sY-Bk-S3h" secondAttribute="leading" constant="16" id="mA1-n9-NW8"/>
                             <constraint firstItem="eaY-tY-dyf" firstAttribute="top" secondItem="6sY-Bk-S3h" secondAttribute="top" constant="113" id="omy-g9-bqu"/>
+                            <constraint firstItem="8vJ-Hb-zGb" firstAttribute="top" secondItem="eaY-tY-dyf" secondAttribute="bottom" constant="23" id="pua-W4-91T"/>
                             <constraint firstItem="ynf-bc-v13" firstAttribute="top" secondItem="Ikt-ER-Wh1" secondAttribute="bottom" constant="40" id="rmr-54-B3H"/>
                             <constraint firstItem="6sY-Bk-S3h" firstAttribute="trailing" secondItem="BgG-m7-Jo4" secondAttribute="trailing" constant="16" id="tGW-yn-uYj"/>
                             <constraint firstItem="BgG-m7-Jo4" firstAttribute="leading" secondItem="6sY-Bk-S3h" secondAttribute="leading" constant="16" id="z3K-MB-6Hk"/>
@@ -374,10 +391,11 @@
                     </view>
                     <connections>
                         <outlet property="addPictureLabel" destination="eaY-tY-dyf" id="cmI-bG-LUW"/>
+                        <outlet property="categoryButton" destination="8vJ-Hb-zGb" id="cxb-no-JCU"/>
                         <outlet property="dexcriptionText" destination="BgG-m7-Jo4" id="rfW-tR-du6"/>
                         <outlet property="imageFanfic" destination="Ikt-ER-Wh1" id="cRd-Km-Krr"/>
                         <outlet property="titleText" destination="ynf-bc-v13" id="mjr-O4-vWd"/>
-                        <segue destination="f4R-yW-Xq5" kind="show" id="013-3P-kZd"/>
+                        <segue destination="f4R-yW-Xq5" kind="show" identifier="toWriteFanfic" id="013-3P-kZd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXd-TD-M78" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -644,6 +662,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="3" width="108" height="128"/>
         <image name="avatar" width="100" height="100"/>
         <image name="create1" width="24" height="24"/>
         <image name="home1" width="24" height="24"/>
